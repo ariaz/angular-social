@@ -30,3 +30,6 @@ gulp.task('views', function() {
 gulp.task('dev', function() {
   server.listen(serverport);
 });
+
+// All task
+gulp.task('serve', ['browserify', 'views', 'dev']);
