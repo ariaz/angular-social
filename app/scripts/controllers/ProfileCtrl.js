@@ -8,6 +8,11 @@
  */
 var ProfileCtrl = function($scope, $routeParams, Profile) {
 
+  /**
+   * NOTE: it uses Profile service and automatically initiates
+   *   scope properties:
+   *     $scope.profile.name, $scope.profile.newsFeed, $scope.profile.friends
+   */
   $scope.profile = new Profile($routeParams.userId);
 };
 

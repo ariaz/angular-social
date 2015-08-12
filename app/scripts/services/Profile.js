@@ -38,7 +38,10 @@ var Profile = function ($http) {
 
 			var that = this;
 			$http.post('/newComment?userId=' + this.userId + '&comment=' + that.newComment)
-			  .success(that.getNewsFeed());
+			  .success( function () {
+			  	that.newComment = '';
+			  	that.getNewsFeed();
+			  });
 		},
 
 		// ajax call to get all data in one request (avoid multiple requests)
