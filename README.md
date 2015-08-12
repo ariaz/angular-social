@@ -1,6 +1,8 @@
 # Usage
 
 ``` sh
+git clone https://github.com/ariaz/angular-social.git
+cd angular-social
 npm install
 gulp serve
 GO TO:
