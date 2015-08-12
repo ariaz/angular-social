@@ -1,0 +1,4 @@
+<h1>News Feed</h1>
+<li ng-repeat="comment in profile.newsFeed">
+	<ul>{{comment.userId}}: {{comment.name}}:  {{comment.comment}} -- {{comment.time | date:'medium'}}</ul>
+</li>
